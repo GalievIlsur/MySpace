@@ -8,6 +8,9 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/usersdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
+      <vm-env>
+        <property name="serverTimezone" value="UTC" />
+      </vm-env>
     </data-source>
   </component>
 </project>

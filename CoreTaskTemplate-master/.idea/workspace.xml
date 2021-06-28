@@ -17,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1uV3zqXYu8a5keYen10C3Xy4AIo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,7 +42,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Database Script.test.sql">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="jm.task.core.jdbc.Main" />
       <module name="TaskJDBC" />
@@ -52,6 +56,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/src/test/resources/test.sql" />
       <script-mode>FILE</script-mode>
@@ -60,8 +77,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.test.sql" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Database Script.test.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -78,6 +95,8 @@
       <workItem from="1624818794530" duration="4787000" />
       <workItem from="1624826280269" duration="445000" />
       <workItem from="1624826761561" duration="13000" />
+      <workItem from="1624903521010" duration="1918000" />
+      <workItem from="1624905495355" duration="5690000" />
     </task>
     <servers />
   </component>
