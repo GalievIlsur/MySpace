@@ -10,8 +10,7 @@ public class Util {
         String url = "jdbc:mysql://localhost:3306/usersdb?serverTimezone=UTC";
         String username = "ILSUR26";
         String password = "F7atx538ilsur";
-        Connection conn = DriverManager.getConnection(url, username, password);
-        return conn;
+        return DriverManager.getConnection(url, username, password);
     }
 
 }
