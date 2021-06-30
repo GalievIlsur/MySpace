@@ -42,17 +42,17 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void dropUsersTable() {
-        System.out.println("Hello");
+
     }
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        System.out.println("Kello");
+
     }
 
     @Override
     public void removeUserById(long id) {
-        System.out.println("dasda");
+
     }
 
     @Override
@@ -62,6 +62,6 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void cleanUsersTable() {
-        System.out.println("dasdas");
+        
     }
 }
