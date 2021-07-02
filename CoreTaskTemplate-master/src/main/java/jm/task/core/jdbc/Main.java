@@ -16,10 +16,7 @@ public class Main {
 //        UserDao userDao = new UserDaoJDBCImpl();
 //        userDao.createUsersTable();
 //
-//        userDao.saveUser("Alex", "Niko", (byte)37);
-//        userDao.saveUser("John", "Kramer", (byte)55);
-//        userDao.saveUser("Alice", "Karter", (byte)34);
-//        userDao.saveUser("Bin", "Mister", (byte)60);
+
 //
 //        List<User> userList = userDao.getAllUsers();
 //        for(User u : userList) {
@@ -30,7 +27,23 @@ public class Main {
 //        userDao.dropUsersTable();
 
         UserDao userDao = new UserDaoHibernateImpl();
-        userDao.createUsersTable();
+//        userDao.createUsersTable();
+
+//        userDao.saveUser("Alex", "Niko", (byte)37);
+//        userDao.saveUser("John", "Kramer", (byte)55);
+//        userDao.saveUser("Alice", "Karter", (byte)34);
+//        userDao.saveUser("Bin", "Mister", (byte)60);
+//
+//        userDao.removeUserById(1);
+//
+        List<User> userList2 = userDao.getAllUsers();
+        for(User u : userList2) {
+            System.out.println(u.toString());
+        }
+//
+//        userDao.cleanUsersTable();
+//
+//        userDao.dropUsersTable();
 
 
 
