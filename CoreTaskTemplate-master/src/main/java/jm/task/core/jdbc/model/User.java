@@ -3,7 +3,8 @@ package jm.task.core.jdbc.model;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Table
+@Entity
+@Table(name = "myusers")
 public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
