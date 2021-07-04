@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c4968c4-7ca2-476c-ba80-5ad8d77c6f51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDaoHibernateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/dao/UserDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/CoreTaskTemplate-master/src/main/java/jm/task/core/jdbc/util/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +104,7 @@
       <workItem from="1625044612642" duration="14564000" />
       <workItem from="1625234765621" duration="6312000" />
       <workItem from="1625392436378" duration="14774000" />
-      <workItem from="1625410629300" duration="871000" />
+      <workItem from="1625410629300" duration="1183000" />
     </task>
     <servers />
   </component>
