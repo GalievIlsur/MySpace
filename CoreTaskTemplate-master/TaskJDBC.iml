@@ -6,9 +6,11 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="TaskJDBC" />
+          <factory-entry name="TaskJDBC" value="b704ee3e-202d-45e7-9976-e89c826d0fa0" />
         </datasource-mapping>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="TaskJDBC" />
+        </naming-strategy-map>
       </configuration>
     </facet>
   </component>
