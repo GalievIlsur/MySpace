@@ -3,12 +3,14 @@ package jm.task.core.jdbc.dao;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.util.Util;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
+    public static SessionFactory sessionFactory = Util.getSessionFactory();
     public static Transaction transaction = null;
 
     public UserDaoHibernateImpl() {
@@ -23,7 +25,7 @@ public class UserDaoHibernateImpl implements UserDao {
                 .append("lastName VARCHAR(45),")
                 .append("age INTEGER(3))")
                 .toString();
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             session.createNativeQuery(sql).executeUpdate();
             session.getTransaction().commit();
@@ -38,7 +40,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void dropUsersTable() {
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             session.createNativeQuery("drop table if exists myusers").executeUpdate();
             session.getTransaction().commit();
@@ -53,7 +55,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void saveUser(String name, String lastName, byte age) {
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             session.save(new User(name, lastName, age));
             session.getTransaction().commit();
@@ -69,7 +71,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void removeUserById(long id) {
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             session.createNativeQuery("delete from myusers where id = " + id + ";").executeUpdate();
             session.getTransaction().commit();
@@ -86,7 +88,7 @@ public class UserDaoHibernateImpl implements UserDao {
     public List<User> getAllUsers() {
         List<User> newResult = new ArrayList<>();
 
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             Query<User> query = session.createQuery("from User");
             newResult = query.getResultList();
@@ -103,7 +105,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void cleanUsersTable() {
-        try (Session session = Util.getSessionFactory().openSession()) {
+        try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
             session.createNativeQuery("truncate table myusers").executeUpdate();
             session.getTransaction().commit();

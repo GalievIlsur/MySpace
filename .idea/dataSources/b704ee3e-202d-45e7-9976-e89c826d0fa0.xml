@@ -1001,29 +1001,5 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="286" parent="7" name="myusers"/>
-    <column id="287" parent="286" name="id">
-      <Position>1</Position>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="288" parent="286" name="name">
-      <Position>2</Position>
-      <DataType>varchar(45)|0s</DataType>
-    </column>
-    <column id="289" parent="286" name="lastName">
-      <Position>3</Position>
-      <DataType>varchar(45)|0s</DataType>
-    </column>
-    <column id="290" parent="286" name="age">
-      <Position>4</Position>
-      <DataType>int|0s</DataType>
-    </column>
-    <key id="291" parent="286" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>
